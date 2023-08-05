@@ -41,10 +41,11 @@ code {
   -webkit-appearance: none;
   -moz-appearance: none;
   background-color: transparent;
-}
-.colorModeToogleBtn:hover {
-  border-radius: 50%;
-  background-color: #bec3c9;
+
+  &:hover {
+    border-radius: 50%;
+    background-color: #bec3c9;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
