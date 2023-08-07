@@ -1,16 +1,19 @@
 import React from "react";
 import BsNavbar from "../BsNavbar";
 import Logo from "../../components/Logo";
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigation } from "react-router-dom";
+import Spinner from "../../components/Spinner";
 
 function MainLayout() {
+  const navigation = useNavigation();
+
   return (
     <div className="App">
       <header className="App-header">
         <BsNavbar />
       </header>
       <div className="App-body">
-        <Outlet />
+        {navigation.state === "loading" ? <Spinner /> : <Outlet />}
       </div>
       <div className="App-footer">
         <Logo />

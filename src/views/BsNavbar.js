@@ -18,6 +18,12 @@ function BsNavbar() {
             <NavLink to="/" end className="nav-link">
               Home
             </NavLink>
+            <NavLink to="/covid-19" className="nav-link">
+              Covid-19
+            </NavLink>
+            <NavLink to="/users" className="nav-link">
+              Users
+            </NavLink>
             <NavLink to="/about" className="nav-link">
               About
             </NavLink>
