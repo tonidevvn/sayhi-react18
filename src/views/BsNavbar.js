@@ -15,9 +15,6 @@ function BsNavbar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto align-items-center">
-            <NavLink to="/" end className="nav-link">
-              Home
-            </NavLink>
             <NavLink to="/covid-19" className="nav-link">
               Covid-19
             </NavLink>

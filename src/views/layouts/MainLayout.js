@@ -12,7 +12,7 @@ function MainLayout() {
       <header className="App-header">
         <BsNavbar />
       </header>
-      <div className="App-body">
+      <div className="App-body container py-5">
         {navigation.state === "loading" ? <Spinner /> : <Outlet />}
       </div>
       <div className="App-footer">

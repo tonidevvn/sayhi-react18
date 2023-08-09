@@ -9,7 +9,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./views/About";
 import ErrorPage from "./views/ErrorPage";
 import MainLayout from "./views/layouts/MainLayout";
-import { getCovid19Stat, getUsers } from "./services";
 import Users from "./views/Users";
 import Covid19 from "./views/Covid19";
 
@@ -21,13 +20,10 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <App />,
+        element: <Covid19 />,
       },
       {
         path: "/covid-19",
-        loader: () => {
-          return getCovid19Stat();
-        },
         element: <Covid19 />,
       },
       {
@@ -36,9 +32,6 @@ const router = createBrowserRouter([
       },
       {
         path: "users",
-        loader: () => {
-          return getUsers();
-        },
         element: <Users />,
       },
     ],
